@@ -4060,20 +4060,20 @@ exports["default"] = function () {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Ff_subal%2FDevelopment%2F100take%2Fpages%2Findex.js!./":
-/*!**************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Ff_subal%2FDevelopment%2F100take%2Fpages%2Findex.js ***!
-  \**************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Ff_subal%2FDevelopment%2F100take%2Fpages%2Findex.tsx!./":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Ff_subal%2FDevelopment%2F100take%2Fpages%2Findex.tsx ***!
+  \***************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
     (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var page = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+      var page = __webpack_require__(/*! ./pages/index.tsx */ "./pages/index.tsx")
       if(true) {
-        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
+        module.hot.accept(/*! ./pages/index.tsx */ "./pages/index.tsx", function() {
           if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+          var updatedPage = __webpack_require__(/*! ./pages/index.tsx */ "./pages/index.tsx")
           next.router.update("/", updatedPage.default || updatedPage)
         })
       }
@@ -7798,10 +7798,10 @@ if ( true && typeof navigator !== 'undefined' && typeof navigator.userAgent === 
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/index.tsx":
+/*!*************************!*\
+  !*** ./pages/index.tsx ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -7812,13 +7812,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-var _jsxFileName = "/Users/f_subal/Development/100take/pages/index.js";
+var _jsxFileName = "/Users/f_subal/Development/100take/pages/index.tsx";
 
 
 
 var Title = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h1.withConfig({
   displayName: "pages__Title",
-  componentId: "sc-1wbo52z-0"
+  componentId: "m89t7j-0"
 })(["font-size:50px;color:", ";"], function (_ref) {
   var theme = _ref.theme;
   return theme.colors.primary;
@@ -7850,19 +7850,19 @@ var Title = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h1.withCon
       lineNumber: 17
     },
     __self: this
-  }, "Not My page"));
+  }, "Not My page, too"));
 });
 
 /***/ }),
 
 /***/ 0:
-/*!******************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Ff_subal%2FDevelopment%2F100take%2Fpages%2Findex.js ***!
-  \******************************************************************************************************************************/
+/*!*******************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Ff_subal%2FDevelopment%2F100take%2Fpages%2Findex.tsx ***!
+  \*******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Ff_subal%2FDevelopment%2F100take%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Ff_subal%2FDevelopment%2F100take%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Ff_subal%2FDevelopment%2F100take%2Fpages%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Ff_subal%2FDevelopment%2F100take%2Fpages%2Findex.tsx!./");
 
 
 /***/ }),

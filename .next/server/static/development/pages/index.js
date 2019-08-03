@@ -93,10 +93,10 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/index.tsx":
+/*!*************************!*\
+  !*** ./pages/index.tsx ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -108,13 +108,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/f_subal/Development/100take/pages/index.js";
+var _jsxFileName = "/Users/f_subal/Development/100take/pages/index.tsx";
 
 
 
 const Title = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.h1.withConfig({
   displayName: "pages__Title",
-  componentId: "sc-1wbo52z-0"
+  componentId: "m89t7j-0"
 })(["font-size:50px;color:", ";"], ({
   theme
 }) => theme.colors.primary);
@@ -145,19 +145,19 @@ const Title = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.h1.withCo
       lineNumber: 17
     },
     __self: undefined
-  }, "Not My page"));
+  }, "Not My page, too"));
 });
 
 /***/ }),
 
 /***/ 3:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
+/*!*******************************!*\
+  !*** multi ./pages/index.tsx ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/f_subal/Development/100take/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/f_subal/Development/100take/pages/index.tsx */"./pages/index.tsx");
 
 
 /***/ }),
