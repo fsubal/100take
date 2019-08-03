@@ -1,8 +1,19 @@
 {
-  "name": "100take",
+  "name": "with-styled-components",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:fsubal/100take.git",
-  "author": "fsubal <fsubal1102@gmail.com>",
-  "license": "MIT"
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "styled-components": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.8.0"
+  },
+  "license": "ISC"
 }
