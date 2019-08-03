@@ -1,11 +1,11 @@
 import React from "react"
 import Head from "next/head"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import { authors } from "../models/author"
+import Author from "../components/Author"
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.colors.default};
-  height: 100vh;
 `
 
 const Hero = styled.section`
@@ -28,29 +28,6 @@ const Inner = styled.section`
   @media(max-width: 768px) {
     border-radius: 0
   }
-`
-
-type AvatarProps = React.HTMLProps<HTMLImageElement> & {
-  crisp: boolean
-}
-
-const Avatar = styled.div`
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-image: url(${(props: AvatarProps) => props.src});
-  background-size: cover;
-  background-position: center;
-  ${(props: AvatarProps) =>
-    props.crisp
-      ? css`
-          image-rendering: pixelated;
-          image-rendering: -webkit-crisp-edges;
-          image-rendering: -moz-crisp-edges;
-          -ms-interpolation-mode: nearest-neighbor;
-        `
-      : null};
 `
 
 export default () => {
@@ -86,14 +63,7 @@ export default () => {
 
       <Inner>
         {authors.map(author => (
-          <div>
-            <Avatar
-              crisp={author.dotpics || false}
-              src={author.avatar}
-              alt={author.penname}
-            />
-            {author.penname}
-          </div>
+          <Author src={author} />
         ))}
       </Inner>
 

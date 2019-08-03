@@ -1,4 +1,4 @@
-interface Author {
+export interface Author {
   penname: string
   avatar?: string
   dotpics?: boolean
