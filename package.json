@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "export": "next export",
+    "start": "next start",
+    "deploy": "build && export"
   },
   "dependencies": {
     "next": "latest",
@@ -17,7 +19,6 @@
     "@types/react": "^16.8.24",
     "@types/react-dom": "^16.8.5",
     "@types/styled-components": "^4.1.18",
-    "@zeit/next-typescript": "^1.1.1",
     "babel-plugin-styled-components": "^1.8.0",
     "prettier": "^1.18.2",
     "typescript": "^3.5.3"
