@@ -5,7 +5,7 @@
     "dev": "next",
     "build": "next build",
     "export": "next export",
-    "start": "next start",
+    "start": "serve ./out",
     "deploy": "build && export"
   },
   "dependencies": {
