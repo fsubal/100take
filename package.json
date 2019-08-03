@@ -6,7 +6,7 @@
     "build": "next build",
     "export": "next export",
     "start": "serve ./out",
-    "deploy": "build && export"
+    "deploy": "yarn build && yarn export"
   },
   "dependencies": {
     "next": "latest",
