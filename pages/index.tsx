@@ -1,6 +1,7 @@
 import React from "react"
 import Head from "next/head"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
+import { authors } from "../models/author"
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.colors.default};
@@ -29,166 +30,28 @@ const Inner = styled.section`
   }
 `
 
-interface Author {
-  penname: string
-  avatar?: string
-  twitter_screen_name: string
-  pixiv_url?: string
-  website_url?: string
-  genre: "novel" | "manga" | "illust" | "text" | "dlc"
+type AvatarProps = React.HTMLProps<HTMLImageElement> & {
+  crisp: boolean
 }
 
-const authors: Author[] = [
-  {
-    penname: "Martin",
-    avatar: require("./icons/martinreaction.png"),
-    twitter_screen_name: "martinreaction",
-    pixiv_url: "https://www.pixiv.net/member.php?id=9060732",
-    website_url: "",
-    genre: "illust"
-  },
-  {
-    penname: "閑咲婀萠",
-    avatar: require("./icons/ametie_k3ki.jpg"),
-    twitter_screen_name: "ametie_k3ki",
-    pixiv_url: "",
-    website_url: "http://ametie.web.fc2.com",
-    genre: "manga"
-  },
-  {
-    penname: "A歌羽.zip",
-    twitter_screen_name: "Utha_art",
-    pixiv_url: "",
-    website_url: "https://autaha-zip.hatenablog.com/",
-    genre: "illust"
-  },
-  {
-    penname: "MNukazawa",
-    twitter_screen_name: "MNukazawa",
-    pixiv_url: "https://www.pixiv.net/member.php?id=11951957",
-    website_url: "https://daisy-bell.booth.pm",
-    genre: "novel"
-  },
-  {
-    penname: "すばるん",
-    twitter_screen_name: "subarun0415",
-    pixiv_url: "https://pixiv.me/subarun0415",
-    website_url: "",
-    genre: "novel"
-  },
-  {
-    penname: "らむだきー",
-    twitter_screen_name: "s6jrmany",
-    pixiv_url: "https://www.pixiv.net/member.php?id=15408823",
-    website_url: "",
-    genre: "novel"
-  },
-  {
-    penname: "めめ",
-    twitter_screen_name: "Milktea900ml",
-    pixiv_url: "https://www.pixiv.net/member.php?id=11625201",
-    website_url: "",
-    genre: "illust"
-  },
-  {
-    penname: "藤秋すばる",
-    twitter_screen_name: "f_subal",
-    pixiv_url: "",
-    website_url: "",
-    genre: "manga"
-  },
-  {
-    penname: "nora1",
-    twitter_screen_name: "pripin789",
-    pixiv_url: "https://www.pixiv.net/member.php?id=16706445",
-    website_url: "",
-    genre: "novel"
-  },
-  {
-    penname: "神原ハヤオ",
-    twitter_screen_name: "/kanbara_s",
-    pixiv_url: "https://www.pixiv.net/member.php?id=18870576",
-    website_url: "",
-    genre: "novel"
-  },
-  {
-    penname: "いたちか",
-    twitter_screen_name: "nkmkinak",
-    pixiv_url: "https://pixiv.me/user_srrm7377",
-    website_url: "",
-    genre: "novel"
-  },
-  {
-    penname: "染井本夜",
-    twitter_screen_name: "biblio1719",
-    pixiv_url: "https://pixiv.me/biblio1719",
-    website_url: "",
-    genre: "illust"
-  },
-  {
-    penname: "くすく",
-    twitter_screen_name: "xfiveone",
-    pixiv_url: "https://www.pixiv.net/member.php?id=9297584",
-    website_url: "",
-    genre: "novel"
-  },
-  {
-    penname: "坂西原貴",
-    twitter_screen_name: "Hirune101",
-    pixiv_url: "",
-    website_url: "hirune1204daydream.hatenablog.com",
-    genre: "novel"
-  },
-  {
-    penname: "星見秋",
-    twitter_screen_name: "himonohsm",
-    pixiv_url: "https://www.pixiv.net/member.php?id=27273529",
-    website_url: "https://hosimiakirara.hatenablog.com",
-    genre: "novel"
-  },
-  {
-    penname: "堅魚",
-    twitter_screen_name: "kengyo7",
-    pixiv_url: "",
-    website_url: "",
-    genre: "novel"
-  },
-  {
-    penname: "asakusa",
-    twitter_screen_name: "asakuso1919",
-    pixiv_url: "",
-    website_url: "",
-    genre: "novel"
-  },
-  {
-    penname: "A11",
-    twitter_screen_name: "a11urrorg",
-    pixiv_url: "pixiv.me/a11urrorg",
-    website_url: "",
-    genre: "text"
-  },
-  {
-    penname: "～しょしぃる",
-    twitter_screen_name: "taksaro",
-    pixiv_url: "",
-    website_url: "",
-    genre: "dlc"
-  },
-  {
-    penname: "RuluMochi",
-    twitter_screen_name: "Rumoi_Mochi",
-    pixiv_url: "",
-    website_url: "",
-    genre: "dlc"
-  },
-  {
-    penname: "ゴートリング",
-    twitter_screen_name: "goat_ling",
-    pixiv_url: "",
-    website_url: "",
-    genre: "dlc"
-  }
-]
+const Avatar = styled.div`
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(${(props: AvatarProps) => props.src});
+  background-size: cover;
+  background-position: center;
+  ${(props: AvatarProps) =>
+    props.crisp
+      ? css`
+          image-rendering: pixelated;
+          image-rendering: -webkit-crisp-edges;
+          image-rendering: -moz-crisp-edges;
+          -ms-interpolation-mode: nearest-neighbor;
+        `
+      : null};
+`
 
 export default () => {
   return (
@@ -221,7 +84,18 @@ export default () => {
         [地図]
       </Inner>
 
-      <Inner>[執筆者一覧]</Inner>
+      <Inner>
+        {authors.map(author => (
+          <div>
+            <Avatar
+              crisp={author.dotpics || false}
+              src={author.avatar}
+              alt={author.penname}
+            />
+            {author.penname}
+          </div>
+        ))}
+      </Inner>
 
       <Inner>[感想はこちら (Google Form 埋め込む)]</Inner>
     </Body>
