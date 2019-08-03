@@ -22,7 +22,7 @@ export default () => {
           href="https://unpkg.com/normalize.css@7.0.0/normalize.css"
         />
       </Head>
-      <Hero>Hello world</Hero>
+      <Hero>Hello world ?</Hero>
     </>
   )
 }
