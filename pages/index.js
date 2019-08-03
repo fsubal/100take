@@ -1,11 +1,11 @@
-import React from "react";
-import Head from "next/head";
-import styled from "styled-components";
+import React from "react"
+import Head from "next/head"
+import styled from "styled-components"
 
 const Title = styled.h1`
   font-size: 50px;
   color: ${({ theme }) => theme.colors.primary};
-`;
+`
 
 export default () => {
   return (
@@ -16,5 +16,5 @@ export default () => {
       </Head>
       <Title>Not My page</Title>
     </>
-  );
-};
+  )
+}
