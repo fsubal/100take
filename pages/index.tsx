@@ -41,6 +41,7 @@ interface Author {
 const authors: Author[] = [
   {
     penname: "Martin",
+    avatar: require("./icons/martinreaction.png"),
     twitter_screen_name: "martinreaction",
     pixiv_url: "https://www.pixiv.net/member.php?id=9060732",
     website_url: "",
@@ -48,6 +49,7 @@ const authors: Author[] = [
   },
   {
     penname: "閑咲婀萠",
+    avatar: require("./icons/ametie_k3ki.jpg"),
     twitter_screen_name: "ametie_k3ki",
     pixiv_url: "",
     website_url: "http://ametie.web.fc2.com",
