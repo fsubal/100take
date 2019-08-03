@@ -1,0 +1,8 @@
+{
+  "name": "100take",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:fsubal/100take.git",
+  "author": "fsubal <fsubal1102@gmail.com>",
+  "license": "MIT"
+}
